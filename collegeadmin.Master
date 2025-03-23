@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="collegeadmin.master.cs" Inherits="Final_task.collegeadmin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+     <link href="StyleMaster.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="site-wrap">
+
+  <nav class="site-nav">
+
+    <div class="name">
+   <b><u>Admin Panel</u></b>   
+
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M11.5,22C11.64,22 11.77,22 11.9,21.96C12.55,21.82 13.09,21.38 13.34,20.78C13.44,20.54 13.5,20.27 13.5,20H9.5A2,2 0 0,0 11.5,22M18,10.5C18,7.43 15.86,4.86 13,4.18V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V4.18C7.13,4.86 5,7.43 5,10.5V16L3,18V19H20V18L18,16M19.97,10H21.97C21.82,6.79 20.24,3.97 17.85,2.15L16.42,3.58C18.46,5 19.82,7.35 19.97,10M6.58,3.58L5.15,2.15C2.76,3.97 1.18,6.79 1,10H3C3.18,7.35 4.54,5 6.58,3.58Z"></path>
+      </svg>
+             </div>
+          <br />
+        <br />
+        <ul>
+          <li>
+              <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Department.aspx" Font-Bold="True" Font-Size="Medium" Font-Underline="False">DEPARTMENT</asp:LinkButton><br /><br /></li>
+            
+          <li> <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/departmentuser.aspx" Font-Bold="True" Font-Size="Medium" Font-Underline="False">DEPARTMENT USER</asp:LinkButton><br />
+              <br /></li>
+              
+         
+            
+          <li><asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/report.aspx" Font-Bold="True" Font-Size="Medium" Font-Underline="False">REPORT</asp:LinkButton><br /><br /></li>
+            <li>
+                <asp:LinkButton ID="LinkButton5" runat="server" Font-Bold="True" Font-Size="Medium" Font-Underline="False" PostBackUrl="~/News.aspx">NEWS</asp:LinkButton><br /><br /></li>
+              <li><asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/defult.aspx" Font-Bold="True" Font-Size="Medium" Font-Underline="False">SIGN OUT</asp:LinkButton><br /><br /></li>
+
+        </ul>
+      
+         
+     
+   
+
+    <div class="note">
+      <h3> This Is The Effective Complaint Management System That Can Help To Address Student Complaint In A Timely Manner.</h3>
+      <p>Explain Clearly What Your Complain Is </p>
+    </div>
+
+  </nav>
+
+  <main>
+
+    <header>
+      <div class="breadcrumbs">
+       
+      </div>
+
+  <CENTER><h1>ONLINE STUDENT COMPLAINT HANDLING PORTAL</h1>
+       <br />
+                                                                                                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                                                                         <B>WELCOME</B> :<asp:Label ID="lblClg" runat="server" Text="Label"></asp:Label>
+        </center> 
+                                                                     
+                                                                                                         
+                                                                     
+        <hr />
+      <nav class="nav-tabs" id="nav-tabs">
+       
+      </nav>
+    </header>
+
+    
+     <asp:contentplaceholder ID="contentplaceholder1" runat="server">
+
+     </asp:contentplaceholder>
+
+   
+
+  </main>
+
+</div>
+    </form>
+</body>
+</html>
